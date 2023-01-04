@@ -32,10 +32,10 @@
 
         window.fbAsyncInit = function () {
             FB.init({
-                appId: '{app-id}',
+                appId: '500961685361055',
                 cookie: true,                     // Enable cookies to allow the server to access the session.
                 xfbml: true,                     // Parse social plugins on this webpage.
-                version: '{api-version}'           // Use this Graph API version for this call.
+                version: 'v15.0'           // Use this Graph API version for this call.
             });
 
 
@@ -58,11 +58,16 @@
 
     <!-- The JS SDK Login Button -->
 
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
+    <header>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
 
-    <div id="status">
-    </div>
+        <div id="status">
+        </div>
+    </header>
+    <main>
+        <input type="number" name="friendRange" id="friendRange" min="1" value="10" max="50" step="1">
+    </main>
 
     <!-- Load the JS SDK asynchronously -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
