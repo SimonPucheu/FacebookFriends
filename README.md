@@ -1,2 +1,2 @@
 # SocialExeperiment
-This is an app for social experiences on facebook accounts
+This is an application for social experiences (such as friend graphs) on social network accounts.
