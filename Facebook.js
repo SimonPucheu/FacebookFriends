@@ -17,17 +17,12 @@ function applyName() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function (response) {
         console.log('Successful login for: ' + response.name);
-        document.getElementById('status').innerHTML =
-            'Thanks for logging in, ' + response.name + '!';
+        document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
     });
-}
-function FacebookGetData() {
-    FB.api
-    return 
 }
 window.fbAsyncInit = function () {
     FB.init({
-        appId: '500961685361055',
+        appId: '734134344965993',
         cookie: true,                     // Enable cookies to allow the server to access the session.
         xfbml: true,                     // Parse social plugins on this webpage.
         version: 'v15.0'           // Use this Graph API version for this call.
